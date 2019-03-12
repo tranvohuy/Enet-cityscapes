@@ -47,4 +47,8 @@ The json files seem to have the most information about segmentation. We can see 
  
  There is a way to convert json file to three other image file types using [json to instanceid](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/json2instanceImg.py) [images](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdInstanceImgs.py), [json to label](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/json2labelImg.py) [images](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py). This is useful since most of us don't have a strong computing resource to run DL. We can reduce the number of object classes from 34 to, says, 10 by combining trees, building, poles as one class.  With a smaller number of classes, it's quicker and easier to run DL (as least for curiosity)
  
- 
+ ## [CreateTrainIdLabelImgs.py](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py)
+Suppose we want to recognize 10 classes.
+- Go to [```labels.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py)
+-
+
