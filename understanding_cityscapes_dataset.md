@@ -34,10 +34,9 @@ Datasets for cityscapes can be downloaded [here](https://www.cityscapes-dataset.
                 [ 111, 281]
             ]
     }, ```
-        
       
- This means, there is a 'pole' object. It is a polygon from pixels with coordinate (102,278)-(103,243)-(112,243)-(111,281)
+This means, there is a 'pole' object. It is a polygon from pixels with coordinate (102,278)-(103,243)-(112,243)-(111,281)
       
- The json files seem to have the most information about segmentation. We can see from the files that there are many object poles, 11 object cars, 2 object people, etc. One true car can be splitted into several object cars because of poles or trees in front of them.
+The json files seem to have the most information about segmentation. We can see from the files that there are many object poles, 11 object cars, 2 object people, etc. One true car can be splitted into several object cars because of poles or trees in front of them.
  
- There is a way to convert json file to three other image file types
+ There is a way to convert json file to three other image file types using [json to instanceids](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/json2instanceImg.py), [json to labelids](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/json2labelImg.py)
