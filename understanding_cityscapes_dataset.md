@@ -3,12 +3,11 @@ Datasets for cityscapes can be downloaded [here](https://www.cityscapes-dataset.
 - True images are stored in leftImg8bit_trainvaltest.zip. In this folder, we can see real (reality) pictures of roads, car driving, etc.
   - The folder leftImg8bit_trainvaltest.zip when unzipped, will have sub-folders with names {aachen, frankfurt, etc}. Here is an example of the file 'aachen_000000_000019_leftImg8bit.png'
   
- <img src="https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_leftImg8bit.png" width="40%">
+ <img src="https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_leftImg8bit.png" width="70%">
   
 - Each picture has its 'segmentation' verions which are stored in gtFine_trainvaltest.zip: _gtFine_color.png, _gtFine_instanceIds.png, _gtFine_labelIds.png, _gtFine_polygons.json
 
-<img src="https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_color.png" width="40%">
-  <img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_instanceIds.png' width ='40%'>
+<img src="https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_color.png" width="40%">   <img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_instanceIds.png' width ='40%'>
   
   !<img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_labelIds.png' width = '40%'>
   
