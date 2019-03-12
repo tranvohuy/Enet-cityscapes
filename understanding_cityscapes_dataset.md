@@ -15,12 +15,12 @@ Datasets for cityscapes can be downloaded [here](https://www.cityscapes-dataset.
  - The true image is segmented (partitioned) into regions. Each region belongs to [34](https://github.com/mcordts/cityscapesScripts/issues/8) [classes](https://www.cityscapes-dataset.com/dataset-overview/#labeling-policy), [says](https://github.com/mcordts/cityscapesScripts/blob/master/cityscapesscripts/helpers/labels.py), car, [truck](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L91), [tree](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L85), [pole](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L81), [person](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L88), etc. Files in gtFine give 4 different ways to encode this partion.
  
  
-- gtFine_color.png: ![gtFine_color](https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_color.png =100x) . This file is of type RGB. Each pixel is colored according to its classes. There is no distinstion between car1 or car2, etc. (RGB for [car](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L90) is (  0,  0, 142)) 
+- gtFine_color.png: <img src="https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_color.png" width="10%"> . This file is of type RGB. Each pixel is colored according to its classes. There is no distinstion between car1 or car2, etc. (RGB for [car](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L90) is (  0,  0, 142)) 
 
-- gtFine_instanceIds.png: ![gtFine_instanceIds](https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_instanceIds.png =100x)
+- gtFine_instanceIds.png: <img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_instanceIds.png' width ='20%'>
 
 
-- gtFine_labelIds.png: a grey-scale image. Each pixelhas value (multiplied by 255) in [0,1,...,33,255]. Meaning of these numbers can be seen [here](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L63)
+- gtFine_labelIds.png:  <img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_labelIds.png' width = '20%'>a grey-scale image. Each pixel has value (multiplied by 255) in [0,1,...,33,255]. Meaning of these numbers can be seen [here](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L63)
   
 
 
