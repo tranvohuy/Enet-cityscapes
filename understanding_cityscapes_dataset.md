@@ -66,7 +66,8 @@ Suppose we want to recognize 10 classes.
     if not files:
         printError( "Did not find any files. Please consult the README." )
 ```
-   - From line [61](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L61), for each file with ending ```_polygons.json```, it will run [```json2labelImg(f, dst, "trainIds")```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/json2labelImg.py#L133)
+   
+  - From line [61](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L61), for each file with ending ```_polygons.json```, it will run [```json2labelImg(f, dst, "trainIds")```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/json2labelImg.py#L133)
 ``` 
 def json2labelImg(inJson,outImg,encoding="ids"):
     annotation = Annotation()
