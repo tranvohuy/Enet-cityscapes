@@ -50,8 +50,23 @@ The json files seem to have the most information about segmentation. We can see 
  ## [CreateTrainIdLabelImgs.py](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py)
 Suppose we want to recognize 10 classes.
 - Go to [```labels.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py), change ```trainId``` accordingly.
-- Go to [```CreateTrainLabelImgs.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py), change directory and files from line [32](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L32) to [50](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L50) accordingly
-  - From line [61](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L61), for each file with ending ```_polygons.json```, it will run [```json2labelImg(f, dst, "trainIds")```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/json2labelImg.py#L133)
+- Go to [```CreateTrainLabelImgs.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py), change directory and files from line [32](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L32) to [50](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L50) accordingly. For example,
+```
+    cityscapesPath = './gtFine/' # i.e. c'urrent folder/gtFine'
+    # how to search for all ground truth
+    searchFine   = os.path.join( cityscapesPath , "gtFine"   , "*" , "*" , "*_gt*_polygons.json" )
+
+    # search files
+    filesFine = glob.glob( searchFine )
+    filesFine.sort()
+    
+    files = filesFine
+
+    # quit if we did not find anything
+    if not files:
+        printError( "Did not find any files. Please consult the README." )
+```
+- From line [61](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L61), for each file with ending ```_polygons.json```, it will run [```json2labelImg(f, dst, "trainIds")```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/json2labelImg.py#L133)
 ``` 
 def json2labelImg(inJson,outImg,encoding="ids"):
     annotation = Annotation()
