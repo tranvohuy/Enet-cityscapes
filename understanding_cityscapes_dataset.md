@@ -52,7 +52,7 @@ Suppose we want to recognize 10 classes.
 - Go to [```labels.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py), change ```trainId``` accordingly.
 - Go to [```CreateTrainLabelImgs.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py), change directory and files from line [32](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L32) to [50](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py#L50) accordingly. For example,
 ```
-    cityscapesPath = './gtFine/' # i.e. c'urrent folder/gtFine'
+    cityscapesPath = './gtFine/' # i.e. 'current folder/gtFine'
     # how to search for all ground truth
     searchFine   = os.path.join( cityscapesPath , "gtFine"   , "*" , "*" , "*_gt*_polygons.json" )
 
