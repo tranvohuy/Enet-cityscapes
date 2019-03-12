@@ -49,6 +49,5 @@ The json files seem to have the most information about segmentation. We can see 
  
  ## [CreateTrainIdLabelImgs.py](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py)
 Suppose we want to recognize 10 classes.
-- Go to [```labels.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py)
--
-
+- Go to [```labels.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py), change ```trainId``` accordingly.
+- Go to [```CreateTrainLabelImgs.py```](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/preparation/createTrainIdLabelImgs.py), 
