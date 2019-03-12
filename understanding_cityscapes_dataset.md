@@ -19,9 +19,9 @@ True images are stored in leftImg8bit_trainvaltest.zip. In this folder, we can s
 
 - gtFine_color.png: <img src="https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_color.png" width="10%"> . This file is of type RGB. Each pixel is colored according to its classes. There is no distinstion between car1 or car2, etc. (RGB for [car](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L90) is (  0,  0, 142)) 
 
-- gtFine_labelIds.png:  <img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_labelIds.png' width = '20%'>a grey-scale image. Each pixel has value (multiplied by 255) in [0,1,...,33,255]. Meaning of these numbers can be seen [here](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L63) This file is equivalent to gt_Fine_color.png (just a different way of coding pixels).
+- gtFine_labelIds.png:  <img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_labelIds.png' width = '20%'>a greyscale image. Each pixel has value (multiplied by 255) in [0,1,...,33,255]. Meaning of these numbers can be seen [here](https://github.com/mcordts/cityscapesScripts/blob/4b6e5154281617660d8347e6c7109686af239317/cityscapesscripts/helpers/labels.py#L63) This file is equivalent to gt_Fine_color.png (just a different way of coding pixels).
 
-- gtFine_instanceIds.png: <img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_instanceIds.png' width ='20%'> This image only cares about _important_ objects (instances) like cars, persons, bike, etc. It ignores building, wall, trees, etc.
+- gtFine_instanceIds.png: <img src='https://raw.githubusercontent.com/tranvohuy/Enet-cityscapes/master/readme_files/aachen_000000_000019_gtFine_instanceIds.png' width ='20%'>  a greyscale image. This image only cares about _important_ objects (instances) like cars, persons, bike, etc. It ignores building, wall, trees, etc.
 
 
 
