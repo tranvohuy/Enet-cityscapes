@@ -39,7 +39,7 @@ True images are stored in leftImg8bit_trainvaltest.zip. In this folder, we can s
             ]
     }, ```
       
-This means, there is a 'pole' object. It is a polygon from pixels with coordinate (102,278)-(103,243)-(112,243)-(111,281)
+This means, there is a 'pole' object. It is a polygon from pixels with coordinate (102,278)-(103,243)-(112,243)-(111,281). The image dimension is 1024x2048.
       
 The json files seem to have the most information about segmentation. We can see from the files that there are many object poles, 11 object cars, 2 object people, etc. One true car can be splitted into several object cars because of poles or trees in front of them.
  
